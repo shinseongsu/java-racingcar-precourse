@@ -2,7 +2,10 @@ package racingcar.constant;
 
 public enum Symbol {
 
-    DELIMITER(",");
+    DELIMITER(","),
+    HYPHEN("-"),
+    COLON(":"),
+    LINE("\n");
 
     private String value;
 
