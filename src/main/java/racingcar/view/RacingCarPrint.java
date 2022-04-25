@@ -22,14 +22,19 @@ public class RacingCarPrint {
                         .append(result)
                         .toString();
 
-        println(resultPrint);
+        print(resultPrint);
     }
 
     public static void printFinalWinner(String winner) {
-        println(String.format(Message.RACE_USER_RESULT.getMessage(), winner));
+        print(String.format(Message.RACE_USER_RESULT.getMessage(), winner));
     }
 
     public static void println(String message) {
         System.out.println(message);
     }
+
+    public static void print(String message) {
+        System.out.print(message);
+    }
+
 }

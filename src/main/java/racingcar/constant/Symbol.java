@@ -4,7 +4,7 @@ public enum Symbol {
 
     DELIMITER(","),
     HYPHEN("-"),
-    COLON(":"),
+    COLON(" : "),
     LINE("\n");
 
     private String value;
