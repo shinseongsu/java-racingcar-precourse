@@ -17,13 +17,11 @@ public class Count {
 
     private static void validate(String attemptCount) {
         if(!pattern.matcher(attemptCount).find()) {
-            throw new IllegalArgumentException(ErrorMessage.ERROR.getMessage() +
-                    ErrorMessage.NUMBER_ATTEMPT_COUNT_ERROR.getMessage());
+            throw new IllegalArgumentException(ErrorMessage.NUMBER_ATTEMPT_COUNT_ERROR.getMessage());
         }
 
         if(ZERO.equals(attemptCount)) {
-            throw new IllegalArgumentException(ErrorMessage.ERROR.getMessage() +
-                    ErrorMessage.MORE_THAN_ZERO_ATTEMPT_COUNT_ERROR.getMessage());
+            throw new IllegalArgumentException(ErrorMessage.MORE_THAN_ZERO_ATTEMPT_COUNT_ERROR.getMessage());
         }
     }
 

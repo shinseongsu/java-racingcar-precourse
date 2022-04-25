@@ -10,7 +10,7 @@ public class Car {
     }
 
     public void moveForward(CarStatus status) {
-        if(status.isGoForward()) {
+        if(status == CarStatus.GO) {
             this.distance.increaseDistance();
         }
     }

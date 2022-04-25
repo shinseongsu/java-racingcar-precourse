@@ -1,8 +1,8 @@
 package racingcar.model;
 
-public class Distance {
-    private static final String HYPHEN = "-";
+import racingcar.constant.Symbol;
 
+public class Distance {
     private StringBuilder distance;
 
     public Distance() {
@@ -10,7 +10,7 @@ public class Distance {
     }
 
     public void increaseDistance() {
-        this.distance.append(HYPHEN);
+        this.distance.append(Symbol.HYPHEN.getValue());
     }
 
     public String getPosition() {

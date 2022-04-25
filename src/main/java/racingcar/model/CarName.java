@@ -13,11 +13,11 @@ public class CarName {
 
     public static void validate(String name) {
         if(name.length() > Length.MAX_LENGTH.getValue()) {
-            throw new IllegalArgumentException(ErrorMessage.ERROR.getMessage() + ErrorMessage.OUT_OF_NAME_LENGTH_ERROR.getMessage());
+            throw new IllegalArgumentException(ErrorMessage.OUT_OF_NAME_LENGTH_ERROR.getMessage());
         }
 
         if(name.length() < Length.MIN_LENGTH.getValue()) {
-            throw new IllegalArgumentException(ErrorMessage.ERROR.getMessage() + ErrorMessage.BLANK_NAME.getMessage());
+            throw new IllegalArgumentException(ErrorMessage.BLANK_NAME.getMessage());
         }
     }
 
